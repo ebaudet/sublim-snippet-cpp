@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+// Overload operator <<
+std::ostream &operator<<(std::ostream &o, const $1& rhs) {
+	o << ;
+	return o;
+}
+
+]]></content>
+	<tabTrigger>Generate Operator ostream</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

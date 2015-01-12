@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+
+/***********************************************
+	Exception $2::$1
+************************************************/
+$2::$1::$1() throw() {
+	return ;
+}
+$2::$1::$1($2::$1 const &instance) throw() {
+	*this = instance;
+	return ;
+}
+$2::$1& $2::$1::operator=($2::$1 const &rhs) throw() {
+	this->std::exception::operator=(rhs);
+	return *this;
+}
+$2::$1::~$1() throw() {
+	return ;
+}
+const  char* $2::$1::what() const throw() {
+	return ("Exeption $2::$1");
+}
+
+]]></content>
+	<tabTrigger>Generate Exception Coplien File</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+/***********************************************
+	Constructors // Destructors
+************************************************/
+$1::$1()
+{
+
+}
+$1::$1($1 const &instance)
+{
+
+}
+$1& $1::operator=($1 const &rhs)
+{
+
+}
+$1::~$1()
+{
+	
+}
+
+]]></content>
+	<tabTrigger>Generate Coplien File</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

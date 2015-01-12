@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+
+/***********************************************
+	Exception $2::$1
+************************************************/
+class $1 : public std::exception
+{
+public:
+	$1() throw();
+	$1($2::$1 const &) throw();
+	$2::$1& operator=($2::$1 const &) throw();
+	~$1() throw();
+	virtual const char* what() const throw();
+};
+
+]]></content>
+	<tabTrigger>Generate Exception Coplien Header</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>
